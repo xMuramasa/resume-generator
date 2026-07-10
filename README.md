@@ -2,6 +2,8 @@
 
 Markdown resume → PDF via headless Chrome. Stdlib only — no venv, no dependencies.
 
+**Demo:** [samples/resume.md](samples/resume.md) → [samples/resume.pdf](samples/resume.pdf)
+
 ## Setup
 
 ```sh
