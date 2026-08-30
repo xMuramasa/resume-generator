@@ -1,0 +1,56 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+@page { size: letter; margin: 0.75cm 0.85cm 0.75cm; }
+* { margin: 0; padding: 0; }
+body {
+  font: 10pt/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+h1 { font-size: 20pt; text-align: center; letter-spacing: 2px; color: #1a365d; }
+h1 + p { text-align: center; margin-bottom: 4pt; }
+h2 {
+  font-size: 11pt; text-transform: uppercase; letter-spacing: 1.5px;
+  color: #1a365d; border-bottom: 1.5px solid #1a365d;
+  margin: 12pt 0 5pt; padding-bottom: 2pt;
+  break-after: avoid;
+}
+h3 { font-size: 10.5pt; margin-top: 8pt; break-after: avoid; }
+h3.entry { display: flex; justify-content: space-between; align-items: baseline; gap: 8pt; }
+h3.entry .meta { color: #555; font-weight: normal; font-size: 9pt; white-space: nowrap; }
+h3 + p { color: #555; margin-bottom: 2pt; }
+p { margin: 2pt 0; }
+ul { margin: 2pt 0 2pt 14pt; }
+li { margin: 2.5pt 0; break-inside: avoid; }
+a { color: inherit; }
+strong { color: #1a365d; }
+</style>
+<h1>Jane Doe</h1>
+<p><strong>Backend Engineer</strong> — Santiago, CL</p>
+<p><a href="mailto:jane@example.com">jane@example.com</a> · <a href="https://github.com/janedoe">github.com/janedoe</a> · <a href="https://linkedin.com/in/janedoe">linkedin.com/in/janedoe</a></p>
+<h2>Experience</h2>
+<h3>Senior Backend Engineer · Acme Corp · 2022 — present</h3>
+<ul>
+<li>Designed and ran the ingestion pipeline moving <strong>40M events/day</strong> from Kafka into Postgres</li>
+<li>Cut p99 API latency from 800ms to 120ms by fixing N+1 queries and adding request coalescing</li>
+<li>Mentored three junior engineers; two promoted within a year</li>
+</ul>
+<h3>Backend Engineer · Startup.io · 2019 — 2022</h3>
+<ul>
+<li>Built the billing service (Python, FastAPI) handling <em>$2M ARR</em> with zero double-charges</li>
+<li>Introduced CI checks that dropped production incidents by half</li>
+<li>On-call rotation lead; wrote the runbooks everyone actually reads</li>
+</ul>
+<h2>Projects</h2>
+<ul>
+<li><a href="https://github.com/xMuramasa/resume-generator">resume-generator</a> — markdown to PDF, stdlib only</li>
+<li><a href="https://github.com/xMuramasa/img-transformer">img-transformer</a> — image conversion and resizing web app</li>
+</ul>
+<h2>Education</h2>
+<h3>B.Sc. Computer Science · Universidad de Chile · 2015 — 2019</h3>
+<h2>Skills</h2>
+<ul>
+<li><strong>Languages:</strong> Python, Go, SQL</li>
+<li><strong>Infra:</strong> Postgres, Kafka, Docker, AWS</li>
+<li><strong>Human:</strong> Spanish (native), English (fluent)</li>
+</ul>

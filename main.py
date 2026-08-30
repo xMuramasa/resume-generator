@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
-"""Markdown resume -> PDF via headless Chrome.
+"""JSON resume -> HTML + Markdown + PDF (PDF via headless Chrome).
 
-Usage: python3 main.py [file.md ...]
+Usage: python3 main.py [file.json|file.md ...]
 Config, from the environment or ./.env (see .env.example):
-  RESUME_SRC  dir with resume .md files
-  RESUME_OUT  output dir for pdfs
+  RESUME_SRC  dir with resume .json files
+  RESUME_OUT  output dir for .html / .md / .pdf
   CHROME_BIN  Chrome binary
 
 Stdlib only — no venv/requirements needed.
-Intermediate HTML goes to a temp dir; only PDFs land in RESUME_OUT.
+Markdown input still works (see README) but JSON is the documented format.
 """
 import os
 import pathlib
 import string
 import subprocess
 import sys
-import tempfile
 
+import resume
 from markdown import md_to_html
 from pdf import html_to_pdf
 
@@ -46,35 +46,38 @@ def config():
     return tuple(pathlib.Path(os.environ[k]).expanduser() for k in ENV_KEYS)
 
 
-def build(md_path, tmp_dir, out, chrome, template):
-    page = template.substitute(body=md_to_html(md_path.read_text()))
-    html_path = tmp_dir / f"{md_path.stem}.html"
-    html_path.write_text(page)
-    pdf_path = out / f"{md_path.stem}.pdf"
+def build(src_path, out, chrome, template):
+    md = src_path.read_text() if src_path.suffix == ".md" else resume.to_markdown(
+        resume.load(src_path)
+    )
+    md_path, html_path = out / f"{src_path.stem}.md", out / f"{src_path.stem}.html"
+    if md_path.resolve() != src_path.resolve():
+        md_path.write_text(md)
+    html_path.write_text(template.substitute(body=md_to_html(md)))
+    pdf_path = out / f"{src_path.stem}.pdf"
     html_to_pdf(html_path, pdf_path, chrome)
-    print(f"{md_path.name} -> {pdf_path}")
+    print(f"{src_path.name} -> {md_path}, {html_path}, {pdf_path}")
 
 
 def main():
     src, out, chrome = config()
     template = string.Template((ROOT / "templates" / "resume.html").read_text())
-    files = [pathlib.Path(f) for f in sys.argv[1:]] or sorted(
-        p for p in src.glob("*.md") if p.name.lower() != "readme.md"
-    )
+    files = [pathlib.Path(f) for f in sys.argv[1:]] or sorted(src.glob("*.json"))
     if not files:
-        sys.exit(f"error: no .md files in {src} (check RESUME_SRC)")
+        sys.exit(f"error: no .json files in {src} (check RESUME_SRC)")
     out.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory() as tmp:
-        for f in files:
-            if not f.is_file():
-                sys.exit(f"error: {f} not found")
-            try:
-                build(f, pathlib.Path(tmp), out, chrome, template)
-            except FileNotFoundError:
-                sys.exit(f"error: chrome not found at {chrome} (check CHROME_BIN)")
-            except subprocess.CalledProcessError as e:
-                detail = e.stderr.decode(errors="replace").strip()[-300:]
-                sys.exit(f"error: chrome failed on {f.name}: {detail}")
+    for f in files:
+        if not f.is_file():
+            sys.exit(f"error: {f} not found")
+        try:
+            build(f, out, chrome, template)
+        except ValueError as e:
+            sys.exit(f"error: {e}")
+        except FileNotFoundError:
+            sys.exit(f"error: chrome not found at {chrome} (check CHROME_BIN)")
+        except subprocess.CalledProcessError as e:
+            detail = e.stderr.decode(errors="replace").strip()[-300:]
+            sys.exit(f"error: chrome failed on {f.name}: {detail}")
 
 
 if __name__ == "__main__":

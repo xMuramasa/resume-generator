@@ -1,7 +1,7 @@
 [project]
 name = "resume-generator"
 version = "0.1.0"
-description = "Markdown resume to PDF via headless Chrome"
+description = "JSON resume to HTML, Markdown and PDF via headless Chrome"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = []

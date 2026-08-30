@@ -1,0 +1,62 @@
+{
+  "name": "Jane Doe",
+  "title": "Backend Engineer",
+  "location": "Santiago, CL",
+  "contact": [
+    { "text": "jane@example.com", "url": "mailto:jane@example.com" },
+    { "text": "github.com/janedoe", "url": "https://github.com/janedoe" },
+    { "text": "linkedin.com/in/janedoe", "url": "https://linkedin.com/in/janedoe" }
+  ],
+  "sections": [
+    {
+      "title": "Experience",
+      "entries": [
+        {
+          "title": "Senior Backend Engineer",
+          "org": "Acme Corp",
+          "dates": "2022 — present",
+          "bullets": [
+            "Designed and ran the ingestion pipeline moving **40M events/day** from Kafka into Postgres",
+            "Cut p99 API latency from 800ms to 120ms by fixing N+1 queries and adding request coalescing",
+            "Mentored three junior engineers; two promoted within a year"
+          ]
+        },
+        {
+          "title": "Backend Engineer",
+          "org": "Startup.io",
+          "dates": "2019 — 2022",
+          "bullets": [
+            "Built the billing service (Python, FastAPI) handling *$2M ARR* with zero double-charges",
+            "Introduced CI checks that dropped production incidents by half",
+            "On-call rotation lead; wrote the runbooks everyone actually reads"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "bullets": [
+        "[resume-generator](https://github.com/xMuramasa/resume-generator) — markdown to PDF, stdlib only",
+        "[img-transformer](https://github.com/xMuramasa/img-transformer) — image conversion and resizing web app"
+      ]
+    },
+    {
+      "title": "Education",
+      "entries": [
+        {
+          "title": "B.Sc. Computer Science",
+          "org": "Universidad de Chile",
+          "dates": "2015 — 2019"
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "bullets": [
+        "**Languages:** Python, Go, SQL",
+        "**Infra:** Postgres, Kafka, Docker, AWS",
+        "**Human:** Spanish (native), English (fluent)"
+      ]
+    }
+  ]
+}
