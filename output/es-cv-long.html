@@ -1,0 +1,95 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+@page { size: letter; margin: 0.75cm 0.85cm 0.75cm; }
+* { margin: 0; padding: 0; }
+body {
+  font: 10pt/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+h1 { font-size: 20pt; text-align: center; letter-spacing: 2px; color: #1a365d; }
+h1 + p { text-align: center; margin-bottom: 4pt; }
+h2 {
+  font-size: 11pt; text-transform: uppercase; letter-spacing: 1.5px;
+  color: #1a365d; border-bottom: 1.5px solid #1a365d;
+  margin: 12pt 0 5pt; padding-bottom: 2pt;
+  break-after: avoid;
+}
+h3 { font-size: 10.5pt; margin-top: 8pt; break-after: avoid; }
+h3.entry { display: flex; justify-content: space-between; align-items: baseline; gap: 8pt; }
+h3.entry .meta { color: #555; font-weight: normal; font-size: 9pt; white-space: nowrap; }
+h3 + p { color: #555; margin-bottom: 2pt; }
+p { margin: 2pt 0; }
+ul { margin: 2pt 0 2pt 14pt; }
+li { margin: 2.5pt 0; break-inside: avoid; }
+a { color: inherit; }
+strong { color: #1a365d; }
+</style>
+<h1>MARTÍN SALINAS SCUSSOLIN</h1>
+<p><strong>Software &amp; Cloud Engineer</strong> — Santiago, Chile</p>
+<p><a href="mailto:martin.salinas.scussolin@gmail.com">martin.salinas.scussolin@gmail.com</a> · <a href="https://x-muramasa.dev">x-muramasa.dev</a> · <a href="https://www.linkedin.com/in/xmuramasa">LinkedIn</a> · <a href="https://github.com/xMuramasa">GitHub</a></p>
+<h2>HABILIDADES TÉCNICAS</h2>
+<ul>
+<li><strong>Arquitectura de Sistemas:</strong> Diseño de Microservicios, Arquitectura Orientada a Eventos, Planificación de Escalabilidad, Sistemas Distribuidos.</li>
+<li><strong>Infraestructura Cloud:</strong> AWS (ECS, Fargate, Lambda, VPC, SQS, Secrets Manager), Azure (Arquitectura de Red, VPN), Proxmox VE.</li>
+<li><strong>Gestión de Identidad y Accesos (IAM):</strong> AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts, Apple Developer.</li>
+<li><strong>Infraestructura como Código (IaC):</strong> Terraform, CloudFormation.</li>
+<li><strong>Backend y Automatización:</strong> Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker, GitHub Actions CI/CD.</li>
+<li><strong>Apps y Autoalojamiento:</strong> React Native (Expo), SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.</li>
+<li><strong>Bases de Datos:</strong> PostgreSQL, AWS Aurora, AWS DynamoDB, MongoDB, SQLite, Optimización de Consultas.</li>
+<li><strong>Observabilidad y Redes:</strong> Wireshark, CloudWatch, Cacti, Grupos de Seguridad (Security Groups).</li>
+</ul>
+<h2>EXPERIENCIA PROFESIONAL</h2>
+<h3 class="entry"><span>Full Stack Software Engineer · Mynu.ai</span><span class="meta">(Mar 2024 – Presente) | Santiago, Chile</span></h3>
+<ul>
+<li><strong>Full-Stack &amp; Mobile Development:</strong> Diseñé e implementé la arquitectura mobile-first y web app desde cero hasta producción para <strong>Mynu App</strong> (iOS/Android) utilizando <strong>React Native (Expo)</strong> y plataformas web como <strong>app.mynubaby.cl</strong> y <strong>mi.mynu.ai</strong> con <strong>React</strong>, asegurando una integración fluida con los microservicios backend.</li>
+<li><strong>Client-Side Optimization &amp; State Management:</strong> Optimicé el rendimiento client-side e implementé estrategias eficientes de manejo de estado y caching con <strong>TanStack Query</strong>, reduciendo la latencia percibida por el usuario y garantizando estabilidad en entornos de producción mobile y web.</li>
+<li><strong>Cloud Infrastructure &amp; Migration:</strong> Lideré la migración cloud desde Azure hacia <strong>AWS ECS/Fargate</strong>, reestructurando el despliegue de contenedores para mejorar el throughput, la escalabilidad y la eficiencia de costos.</li>
+<li><strong>Infrastructure as Code (IaC):</strong> Diseñé e implementé un microservicio de notificaciones event-driven utilizando <strong>Terraform</strong> (SQS &amp; Lambda), desacoplando tareas asíncronas y eliminando cuellos de botella en el procesamiento del backend.</li>
+<li><strong>IAM &amp; Authentication Architecture:</strong> Diseñé un sistema de autenticación personalizado utilizando <strong>AWS Cognito</strong> en una arquitectura híbrida; posteriormente ejecuté una migración de usuarios a <strong>Clerk</strong> con cero downtime y cero pérdida de datos, integrando flujos personalizados de OAuth con Google y Apple.</li>
+<li><strong>CI/CD &amp; Security Automation:</strong> Construí pipelines de despliegue automatizados utilizando <strong>GitHub Actions</strong>, Environments y <strong>AWS Secrets Manager</strong> para la inyección dinámica de credenciales, eliminando el uso de credenciales hardcodeadas.</li>
+<li><strong>Performance Engineering:</strong> Reduje la latencia de respuesta en 2 segundos en integraciones con APIs de terceros (Edamam API) mediante la implementación de mecanismos de in-memory caching y ALB Sticky Sessions.</li>
+<li><strong>Network &amp; Security Design:</strong> Configuré topologías de VPC seguras con VPC Peering e Interface Endpoints para garantizar una comunicación privada bajo el principio de menor privilegio entre servicios distribuidos.</li>
+</ul>
+<h3 class="entry"><span>Software Engineer · Zippedi Inc.</span><span class="meta">(Jun 2022 – Oct 2023) | Santiago, Chile</span></h3>
+<ul>
+<li><strong>Full-Stack &amp; Mobile Engineering:</strong> Desarrollé funcionalidades clave e implementé mejoras continuas para aplicaciones móviles y plataformas web orientadas a clientes, trabajando tanto en ciclos de desarrollo de largo plazo (Shape-Up) como en sprints ágiles para despliegue rápido de features y bug fixes.</li>
+<li><strong>Internal QA Tooling &amp; Platforms:</strong> Implementé features y mantuve herramientas en la plataforma web para el equipo de QA, optimizando los ciclos de validación de software interno.</li>
+</ul>
+<h3 class="entry"><span>Junior Cybersecurity Engineer (Intern) · NTT DATA Europe &amp; LATAM</span><span class="meta">(Ene 2022 – Feb 2022) | Santiago, Chile</span></h3>
+<ul>
+<li><strong>Cloud Security &amp; Policy:</strong> Evalué topologías de red en Azure para clientes corporativos, identificando vulnerabilidades e implementando marcos de hardening cloud-native.</li>
+<li><strong>Threat Modeling &amp; Governance Research:</strong> Investigué y documenté metodologías de Cyber Kill Chain para fortalecer el análisis de vulnerabilidades y el modelado de amenazas; realicé investigaciones de seguridad alineadas con el estándar ISO 27001 para respaldar estrategias de cumplimiento y gestión de riesgos.</li>
+</ul>
+<h3 class="entry"><span>Operations Engineer (Intern) · ITD Telecom</span><span class="meta">(Ene 2021 – Ago 2021) | Santiago, Chile</span></h3>
+<ul>
+<li><strong>Hosting Infrastructure Support &amp; Internal Tooling:</strong> Proporcioné soporte técnico a la plataforma de hosting y desarrollé herramientas internas para mejorar la eficiencia operacional.</li>
+<li><strong>Service Management &amp; GLPI Implementation:</strong> Trabajé en la implementación de GLPI para optimizar las operaciones de TI internas y el seguimiento de tickets.</li>
+<li><strong>Infrastructure Monitoring:</strong> Monitoreé la salud y las métricas de rendimiento de la infraestructura de hosting utilizando <strong>Cacti</strong>.</li>
+<li><strong>SLA &amp; Process Governance:</strong> Contribuí en el desarrollo de políticas internas de SLA para optimizar los flujos de trabajo generales de la empresa.</li>
+</ul>
+<h3 class="entry"><span>Ayudante Docente y de Laboratorio · Universidad Técnica Federico Santa María</span><span class="meta">(Ago 2019 – Dic 2022) | Santiago, Chile</span></h3>
+<ul>
+<li><strong>Ayudante de Cátedra:</strong> Gestión de Proyectos de Informática <em>(Abr 2022 – Dic 2022)</em>, Estructuras de Datos <em>(Mar 2020 – Jul 2022)</em>, Introducción a la Ingeniería <em>(Ago 2020 – Ene 2021)</em> y Programación en Python <em>(Mar 2020 – Jul 2020)</em>: apoyo en cátedras, material de estudio, ayudantías y corrección de tareas de código y teoría.</li>
+<li><strong>Ayudante de Laboratorio</strong> <em>(Ago 2019 – Oct 2019)</em>: Mantenimiento preventivo y correctivo de los equipos de laboratorio.</li>
+</ul>
+<h2>PROYECTOS DESTACADOS</h2>
+<ul>
+<li><strong>Cloud Infrastructure Blueprint (Terraform):</strong> Diseñé e implementé una plataforma AWS de nivel de producción utilizando Terraform, la cual incluye VPCs aisladas, VPC Peering, servicios ECS, mensajería SQS, políticas de mínimo privilegio de IAM y comunicación orientada a eventos para demostrar patrones de arquitectura cloud escalable.</li>
+<li><strong>Trismegistus (Go, Swift, Kotlin):</strong> Relay WebSocket en Go con SQLite y reenvío de eventos para un agente de IA autoalojado, y apps nativas SwiftUI (macOS) y Jetpack Compose (Android) sobre un protocolo común con contract tests.</li>
+<li><strong>Homelab Autoalojado:</strong> 25 contenedores Docker Compose tras Caddy (TLS wildcard vía Cloudflare DNS-01), DNS con AdGuard, acceso solo por Tailscale, monitoreo con Beszel/Uptime Kuma y respaldos nocturnos con restic.</li>
+<li><strong>Open Source:</strong> <a href="https://github.com/xMuramasa/news-reader">news-reader</a> (noticias generadas con IA como JSON validado; Bun, MongoDB, React), <a href="https://github.com/xMuramasa/img-transformer">img-transformer</a> (conversión de imágenes con FastAPI) y <a href="https://github.com/xMuramasa/on-site-meeting-logger">on-site-meeting-logger</a> (de grabaciones de reuniones a actas y PDFs).</li>
+<li><strong>Desarrollo con IA:</strong> Construí estos proyectos dirigiendo agentes de IA (Claude Code) con specs y revisión estricta.</li>
+<li><strong>Tesis - Machine Learning para Clasificación de Autómatas:</strong> Construí un modelo de alta precisión para autómatas celulares 1D, demostrando sólidas habilidades de diseño analítico y algorítmico.</li>
+</ul>
+<h2>EDUCACIÓN</h2>
+<h3 class="entry"><span>Universidad Técnica Federico Santa María</span><span class="meta">(2017 – 2023) | Santiago, Chile</span></h3>
+<ul>
+<li>Licenciatura en Ciencias (B.Sc.) en Ingeniería Civil Informática (Grado Profesional de 5 años)</li>
+</ul>
+<h2>CERTIFICACIONES</h2>
+<ul>
+<li><strong>Docker Mastery:</strong> Kubernetes &amp; Swarm (Udemy) · <strong>Go - The Complete Guide</strong> (Udemy)</li>
+</ul>
+<h2>SOBRE MÍ</h2>
+<p>Software and Cloud Engineer con una sólida base en ingeniería backend y gestión de identidades y accesos. Enfocado en el diseño de sistemas distribuidos escalables, modulares y seguros. Sobresalgo en la traducción de requisitos de negocio complejos hacia arquitecturas cloud de alto rendimiento, aprovechando la infraestructura como código (IaC) para garantizar consistencia y confiabilidad desde sus cimientos.</p>
