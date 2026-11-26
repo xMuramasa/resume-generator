@@ -30,26 +30,30 @@ strong { color: #1a365d; }
 <p><a href="mailto:martin.salinas.scussolin@gmail.com">martin.salinas.scussolin@gmail.com</a> · <a href="https://x-muramasa.dev">x-muramasa.dev</a> · <a href="https://www.linkedin.com/in/xmuramasa">LinkedIn</a> · <a href="https://github.com/xMuramasa">GitHub</a></p>
 <h2>TECHNICAL SKILLS</h2>
 <ul>
-<li><strong>Systems Architecture:</strong> Microservices Design, Event-Driven Architecture, Scalability Planning, Distributed Systems.</li>
-<li><strong>Cloud Infrastructure:</strong> AWS (ECS, Fargate, Lambda, VPC, SQS, Secrets Manager), Azure (Network Architecture, VPN), Proxmox VE.</li>
+<li><strong>Cloud &amp; IaC:</strong> AWS (EC2, ECS, Fargate, Lambda, RDS, Aurora, VPC, SQS, S3, Secrets Manager), Azure (networking, VPN), Terraform, CloudFormation, Proxmox VE.</li>
+<li><strong>Kubernetes &amp; GitOps:</strong> Kubernetes (k3s), ArgoCD, Kustomize, KEDA, cert-manager, GitHub Actions CI/CD, multi-arch (ARM64) images.</li>
+<li><strong>Observability &amp; Networking:</strong> Prometheus, Grafana, Alertmanager, CloudWatch, Wireshark, Cacti, Security Groups.</li>
+<li><strong>Systems Architecture:</strong> Microservices, event-driven architecture, queue-based processing, distributed systems, cost optimization.</li>
 <li><strong>Identity &amp; Access Management (IAM):</strong> AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts, Apple Developer.</li>
-<li><strong>Infrastructure as Code (IaC):</strong> Terraform, CloudFormation.</li>
-<li><strong>Backend &amp; Automation:</strong> Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker, GitHub Actions CI/CD.</li>
-<li><strong>Apps &amp; Self-Hosting:</strong> React Native (Expo), SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.</li>
-<li><strong>Database &amp; Data:</strong> PostgreSQL, AWS Aurora, AWS DynamoDB, MongoDB, SQLite, Query Optimization.</li>
-<li><strong>Observability &amp; Networking:</strong> Wireshark, CloudWatch, Cacti, Security Groups.</li>
+<li><strong>Backend &amp; Data:</strong> Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker; PostgreSQL, AWS Aurora, DynamoDB, MongoDB, SQLite.</li>
+<li><strong>Apps &amp; Self-Hosting:</strong> React Native (Expo), React, SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.</li>
+<li><strong>AI-Assisted Development:</strong> Claude Code for most implementation; architecture, review and hand edits are mine.</li>
 </ul>
 <h2>PROFESSIONAL EXPERIENCE</h2>
-<h3 class="entry"><span>Full Stack Software Engineer · Mynu.ai</span><span class="meta">(Mar 2024 – Present) | Santiago, Chile</span></h3>
+<h3 class="entry"><span>Software Engineer (Cloud &amp; Platform) · Mynu.ai</span><span class="meta">(Mar 2024 – Present) | Santiago, Chile</span></h3>
 <ul>
-<li><strong>Full-Stack &amp; Mobile Development:</strong> Designed and implemented the mobile-first and web app architecture from the ground up to production for <strong>Mynu App</strong> (iOS/Android) using <strong>React Native (Expo)</strong> and web platforms such as <strong>app.mynubaby.cl</strong> and <strong>mi.mynu.ai</strong> with <strong>React</strong>, ensuring seamless integration with backend microservices.</li>
-<li><strong>Client-Side Optimization &amp; State Management:</strong> Optimized client-side performance and implemented efficient state management and caching strategies with <strong>TanStack Query</strong>, reducing perceived user latency and ensuring stability across mobile and web production environments.</li>
-<li><strong>Cloud Infrastructure &amp; Migration:</strong> Led the cloud migration from Azure to <strong>AWS ECS/Fargate</strong>, restructuring container deployment to improve throughput, scalability, and cost efficiency.</li>
-<li><strong>Infrastructure as Code (IaC):</strong> Designed and implemented an event-driven notifications microservice using <strong>Terraform</strong> (SQS &amp; Lambda), decoupling asynchronous tasks and eliminating backend processing bottlenecks.</li>
-<li><strong>IAM &amp; Authentication Architecture:</strong> Designed a custom authentication system using <strong>AWS Cognito</strong> in a hybrid architecture; subsequently executed a user migration to <strong>Clerk</strong> with zero downtime and zero data loss, integrating custom OAuth flows with Google and Apple.</li>
-<li><strong>CI/CD &amp; Security Automation:</strong> Built automated deployment pipelines using <strong>GitHub Actions</strong>, Environments, and <strong>AWS Secrets Manager</strong> for dynamic credential injection, eliminating the use of hardcoded credentials.</li>
-<li><strong>Performance Engineering:</strong> Reduced response latency by 2 seconds on third-party API integrations (Edamam API) by implementing in-memory caching mechanisms and ALB Sticky Sessions.</li>
-<li><strong>Network &amp; Security Design:</strong> Configured secure VPC topologies with VPC Peering and Interface Endpoints to ensure least-privilege private communication between distributed services.</li>
+<li><strong>Kubernetes Migration &amp; Cost Reduction:</strong> As the sole infrastructure engineer, planned, executed and led end to end the move of every service from AWS ECS/Fargate to a self-managed Kubernetes (k3s) cluster on AWS, with all infrastructure in Terraform modules; cut monthly cloud spend by ~70%.</li>
+<li><strong>Database Consolidation:</strong> Consolidated three Aurora instances into a single RDS instance and ran the data migrations.</li>
+<li><strong>GitOps CI/CD:</strong> Introduced ArgoCD: GitHub Actions builds ARM64 images and writes the new tag to the manifests repo, ArgoCD deploys dev and prod, and AWS Secrets Manager injects credentials, with no hardcoded secrets.</li>
+<li><strong>Observability:</strong> Started the monitoring initiative (Prometheus, Grafana, Alertmanager, CloudWatch alarms to Slack) to measure resource utilization and guide the cost work.</li>
+<li><strong>Report Generation Service:</strong> Built a queue-driven PDF service (Node, SQS, S3, React-PDF) that moved report generation out of the browser and enabled bulk B2B report distribution; validated with real users on batches of ~150 queued reports.</li>
+<li><strong>AI Development Workflow:</strong> Built the team's Claude Code plugin marketplace: skills that take a request from written spec to GitHub issue, stacked PRs and review, an automated PR reviewer with the team's known-bug checklist, and documentation standards; synced org-wide so non-engineers use it in the Claude app.</li>
+<li><strong>Shared Predisposition Library:</strong> Consolidated genetic-predisposition calculations scattered across apps into one shared TypeScript library.</li>
+<li><strong>Full-Stack &amp; Mobile Development:</strong> Built the <strong>Mynu App</strong> (iOS/Android) with <strong>React Native (Expo)</strong> and the web platforms <strong>app.mynubaby.cl</strong> and <strong>mi.mynu.ai</strong> with <strong>React</strong>, from zero to production, with TanStack Query caching for fast, stable clients.</li>
+<li><strong>Earlier Platform Work:</strong> Led the Azure → AWS ECS/Fargate migration and built an event-driven notifications microservice (SQS, Lambda) in Terraform.</li>
+<li><strong>IAM &amp; Authentication:</strong> Designed AWS Cognito authentication, then migrated all users to <strong>Clerk</strong> with zero downtime and zero data loss, with Google and Apple OAuth.</li>
+<li><strong>Performance &amp; Networking:</strong> Cut third-party API (Edamam) latency by 2 s with in-memory caching and ALB sticky sessions; designed least-privilege VPC networking with peering and interface endpoints.</li>
+<li><strong>Ownership &amp; Code Review:</strong> Maintain the lab sample-tracking and kit-management systems, administer the GitHub Enterprise organization (permissions, roles), and review teammates' and AI-generated code.</li>
 </ul>
 <h3 class="entry"><span>Software Engineer · Zippedi Inc.</span><span class="meta">(Jun 2022 – Oct 2023) | Santiago, Chile</span></h3>
 <ul>
@@ -63,10 +67,8 @@ strong { color: #1a365d; }
 </ul>
 <h3 class="entry"><span>Operations Engineer (Intern) · ITD Telecom</span><span class="meta">(Jan 2021 – Aug 2021) | Santiago, Chile</span></h3>
 <ul>
-<li><strong>Hosting Infrastructure Support &amp; Internal Tooling:</strong> Provided technical support for the hosting platform and developed internal tools to improve operational efficiency.</li>
-<li><strong>Service Management &amp; GLPI Implementation:</strong> Worked on implementing GLPI to streamline internal IT operations and ticket tracking.</li>
-<li><strong>Infrastructure Monitoring:</strong> Monitored hosting infrastructure health and performance metrics using <strong>Cacti</strong>.</li>
-<li><strong>SLA &amp; Process Governance:</strong> Contributed to developing internal SLA policies to streamline company-wide workflows.</li>
+<li><strong>Hosting Support &amp; Tooling:</strong> Supported the hosting platform, built internal tools and implemented GLPI for IT ticketing.</li>
+<li><strong>Monitoring &amp; SLAs:</strong> Monitored infrastructure health with <strong>Cacti</strong> and helped define internal SLA policies.</li>
 </ul>
 <h3 class="entry"><span>Teaching &amp; Lab Assistant · Universidad Técnica Federico Santa María</span><span class="meta">(Aug 2019 – Dec 2022) | Santiago, Chile</span></h3>
 <ul>
@@ -75,11 +77,9 @@ strong { color: #1a365d; }
 </ul>
 <h2>KEY PROJECTS</h2>
 <ul>
-<li><strong>Cloud Infrastructure Blueprint (Terraform):</strong> Designed and implemented a production-style AWS platform using Terraform featuring isolated VPCs, VPC Peering, ECS services, SQS messaging, IAM least-privilege policies, and event-driven communication to demonstrate scalable cloud architecture patterns.</li>
 <li><strong>Trismegistus (Go, Swift, Kotlin):</strong> Go WebSocket relay with SQLite and event replay for a self-hosted AI agent, plus native SwiftUI (macOS) and Jetpack Compose (Android) apps on one contract-tested protocol.</li>
 <li><strong>Self-Hosted Homelab:</strong> 25 Docker Compose containers behind Caddy (wildcard TLS via Cloudflare DNS-01), AdGuard DNS, Tailscale-only access, Beszel/Uptime Kuma monitoring and nightly restic backups.</li>
 <li><strong>Open Source:</strong> <a href="https://github.com/xMuramasa/news-reader">news-reader</a> (AI news briefings as validated JSON; Bun, MongoDB, React), <a href="https://github.com/xMuramasa/img-transformer">img-transformer</a> (FastAPI image conversion) and <a href="https://github.com/xMuramasa/on-site-meeting-logger">on-site-meeting-logger</a> (meeting recordings to minutes and PDFs).</li>
-<li><strong>AI-Assisted Delivery:</strong> I direct AI coding agents (Claude Code) through specs, isolated worktrees and test and review gates; the projects above were built this way.</li>
 <li><strong>Thesis - Machine Learning for Automata Classification:</strong> Built a high-accuracy model for 1D cellular automata, demonstrating strong analytical and algorithmic design skills.</li>
 </ul>
 <h2>EDUCATION</h2>
@@ -89,7 +89,9 @@ strong { color: #1a365d; }
 </ul>
 <h2>CERTIFICATIONS</h2>
 <ul>
-<li><strong>Docker Mastery:</strong> Kubernetes &amp; Swarm (Udemy) · <strong>Go - The Complete Guide</strong> (Udemy)</li>
+<li><strong><a href="https://www.udemy.com/certificate/UC-49965bee-53e3-4448-91a5-6d686af652a4/">Argo CD and Argo Rollouts for GitOps: The Definitive Guide</a></strong> (Udemy, Nov 2026)</li>
+<li><strong>Docker Mastery:</strong> Kubernetes &amp; Swarm (Udemy)</li>
+<li><strong>Go - The Complete Guide</strong> (Udemy)</li>
 </ul>
 <h2>ABOUT ME</h2>
-<p>Software and Cloud Engineer with a strong foundation in backend engineering and identity access management. Focused on designing scalable, modular, and secure distributed systems. I excel at translating complex business requirements into high-performance cloud architectures, leveraging IaC to ensure consistency and reliability from the ground up.</p>
+<p>Software and Cloud Engineer and Mynu's sole infrastructure engineer, where I moved the platform to Kubernetes and cut cloud costs about 70%. Strong foundation in backend engineering and identity and access management; I design scalable, secure distributed systems, define everything as code, and use AI coding agents for most implementation while owning the architecture and the review.</p>

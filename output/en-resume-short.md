@@ -7,30 +7,31 @@
 
 ## TECHNICAL SKILLS
 
-* **Systems Architecture:** Microservices, Event-Driven Design, Distributed Systems, Scalability Planning.
-* **Cloud & IaC:** AWS (ECS, Fargate, Lambda, SQS, VPC, Secrets Manager), Azure, Terraform, CloudFormation.
-* **IAM:** AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts.
-* **Backend & Data:** Go, Python, TypeScript/Node.js, Docker, GitHub Actions CI/CD, PostgreSQL, MongoDB.
+* **Cloud & Platform:** AWS (EC2, ECS, Lambda, RDS, SQS, S3), Kubernetes (k3s), ArgoCD, Terraform, Grafana.
+* **Architecture & IAM:** Microservices, event-driven design, distributed systems; Cognito, Clerk, OAuth, JWT.
+* **Backend & Data:** Go, Python, TypeScript/Node.js, Docker, GitHub Actions, PostgreSQL, MongoDB.
+* **AI-Assisted Development:** Claude Code for most implementation; architecture and review are mine.
 
 ## PROFESSIONAL EXPERIENCE
 
-### Full Stack Software Engineer · Mynu.ai
+### Software Engineer (Cloud & Platform) · Mynu.ai
 *(Mar 2024 – Present) | Santiago, Chile*
 
-* Built Mynu App (iOS/Android) mobile-first architecture and web platforms from zero to production using React Native (Expo) and React.
-* Led Azure→AWS ECS/Fargate migration and built a Terraform (SQS/Lambda) event-driven notifications microservice.
-* Migrated auth from AWS Cognito to Clerk with zero downtime/data loss; automated CI/CD via GitHub Actions and Secrets Manager.
-* Cut third-party API latency by 2s via in-memory caching and ALB Sticky Sessions; designed least-privilege VPC networking.
+* Sole infrastructure engineer: planned and led the ECS/Fargate → Kubernetes (k3s) migration with Terraform and ArgoCD GitOps, cutting monthly cloud costs ~70%; merged three Aurora instances into one RDS.
+* Built a queue-driven PDF report service for bulk B2B distribution (~150 queued reports tested with real users) and a shared library for genetic-predisposition calculations.
+* Built the team's Claude Code skills (spec → issue → stacked PRs → automated review), synced org-wide; administer GitHub Enterprise and review team and AI-generated code.
+* Built Mynu App (iOS/Android) and web platforms from zero to production with React Native (Expo) and React; earlier led the Azure → AWS ECS/Fargate migration.
+* Migrated auth from Cognito to Clerk with zero downtime or data loss; cut third-party API latency by 2 s.
 
 ### Software Engineer · Zippedi Inc.
 *(Jun 2022 – Oct 2023) | Santiago, Chile*
 
-* Shipped features for customer-facing mobile/web apps (Shape-Up and agile sprints); built and maintained internal QA tooling.
+* Shipped features for customer-facing mobile and web apps (Shape-Up, agile sprints) and internal QA tooling.
 
 ### Junior Cybersecurity Engineer (Intern) · NTT DATA Europe & LATAM
 *(Jan 2022 – Feb 2022) | Santiago, Chile*
 
-* Assessed Azure network security for corporate clients; researched Cyber Kill Chain and ISO 27001-aligned threat modeling.
+* Assessed clients' Azure network security; researched Cyber Kill Chain and ISO 27001-aligned threat modeling.
 
 ### Operations Engineer (Intern) · ITD Telecom
 *(Jan 2021 – Aug 2021) | Santiago, Chile*
@@ -39,7 +40,6 @@
 
 ## KEY PROJECTS
 
-* **Cloud Infrastructure Blueprint (Terraform):** AWS platform with isolated VPCs, ECS, SQS and least-privilege IAM.
 * **Trismegistus:** Go WebSocket relay and native SwiftUI/Jetpack Compose apps for a self-hosted AI agent.
 * **Self-Hosted Homelab:** 25 Docker Compose containers behind Caddy (wildcard TLS), Tailscale, restic backups.
 * **Thesis – ML for Automata Classification:** High-accuracy model for 1D cellular automata.
@@ -53,8 +53,9 @@
 
 ## CERTIFICATIONS
 
+* **[Argo CD and Argo Rollouts for GitOps: The Definitive Guide](https://www.udemy.com/certificate/UC-49965bee-53e3-4448-91a5-6d686af652a4/)** (Udemy, Nov 2026)
 * **Docker Mastery:** Kubernetes & Swarm (Udemy) · **Go - The Complete Guide** (Udemy)
 
 ## ABOUT ME
 
-Software & Cloud Engineer specializing in scalable, secure distributed systems and IAM, turning complex requirements into high-performance cloud architectures via IaC.
+Sole infrastructure engineer who cut a production platform's cloud costs ~70% with Kubernetes, Terraform and GitOps.

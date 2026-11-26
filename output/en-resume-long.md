@@ -7,28 +7,32 @@
 
 ## TECHNICAL SKILLS
 
-* **Systems Architecture:** Microservices Design, Event-Driven Architecture, Scalability Planning, Distributed Systems.
-* **Cloud Infrastructure:** AWS (ECS, Fargate, Lambda, VPC, SQS, Secrets Manager), Azure (Network Architecture, VPN), Proxmox VE.
+* **Cloud & IaC:** AWS (EC2, ECS, Fargate, Lambda, RDS, Aurora, VPC, SQS, S3, Secrets Manager), Azure (networking, VPN), Terraform, CloudFormation, Proxmox VE.
+* **Kubernetes & GitOps:** Kubernetes (k3s), ArgoCD, Kustomize, KEDA, cert-manager, GitHub Actions CI/CD, multi-arch (ARM64) images.
+* **Observability & Networking:** Prometheus, Grafana, Alertmanager, CloudWatch, Wireshark, Cacti, Security Groups.
+* **Systems Architecture:** Microservices, event-driven architecture, queue-based processing, distributed systems, cost optimization.
 * **Identity & Access Management (IAM):** AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts, Apple Developer.
-* **Infrastructure as Code (IaC):** Terraform, CloudFormation.
-* **Backend & Automation:** Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker, GitHub Actions CI/CD.
-* **Apps & Self-Hosting:** React Native (Expo), SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.
-* **Database & Data:** PostgreSQL, AWS Aurora, AWS DynamoDB, MongoDB, SQLite, Query Optimization.
-* **Observability & Networking:** Wireshark, CloudWatch, Cacti, Security Groups.
+* **Backend & Data:** Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker; PostgreSQL, AWS Aurora, DynamoDB, MongoDB, SQLite.
+* **Apps & Self-Hosting:** React Native (Expo), React, SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.
+* **AI-Assisted Development:** Claude Code for most implementation; architecture, review and hand edits are mine.
 
 ## PROFESSIONAL EXPERIENCE
 
-### Full Stack Software Engineer · Mynu.ai
+### Software Engineer (Cloud & Platform) · Mynu.ai
 *(Mar 2024 – Present) | Santiago, Chile*
 
-* **Full-Stack & Mobile Development:** Designed and implemented the mobile-first and web app architecture from the ground up to production for **Mynu App** (iOS/Android) using **React Native (Expo)** and web platforms such as **app.mynubaby.cl** and **mi.mynu.ai** with **React**, ensuring seamless integration with backend microservices.
-* **Client-Side Optimization & State Management:** Optimized client-side performance and implemented efficient state management and caching strategies with **TanStack Query**, reducing perceived user latency and ensuring stability across mobile and web production environments.
-* **Cloud Infrastructure & Migration:** Led the cloud migration from Azure to **AWS ECS/Fargate**, restructuring container deployment to improve throughput, scalability, and cost efficiency.
-* **Infrastructure as Code (IaC):** Designed and implemented an event-driven notifications microservice using **Terraform** (SQS & Lambda), decoupling asynchronous tasks and eliminating backend processing bottlenecks.
-* **IAM & Authentication Architecture:** Designed a custom authentication system using **AWS Cognito** in a hybrid architecture; subsequently executed a user migration to **Clerk** with zero downtime and zero data loss, integrating custom OAuth flows with Google and Apple.
-* **CI/CD & Security Automation:** Built automated deployment pipelines using **GitHub Actions**, Environments, and **AWS Secrets Manager** for dynamic credential injection, eliminating the use of hardcoded credentials.
-* **Performance Engineering:** Reduced response latency by 2 seconds on third-party API integrations (Edamam API) by implementing in-memory caching mechanisms and ALB Sticky Sessions.
-* **Network & Security Design:** Configured secure VPC topologies with VPC Peering and Interface Endpoints to ensure least-privilege private communication between distributed services.
+* **Kubernetes Migration & Cost Reduction:** As the sole infrastructure engineer, planned, executed and led end to end the move of every service from AWS ECS/Fargate to a self-managed Kubernetes (k3s) cluster on AWS, with all infrastructure in Terraform modules; cut monthly cloud spend by ~70%.
+* **Database Consolidation:** Consolidated three Aurora instances into a single RDS instance and ran the data migrations.
+* **GitOps CI/CD:** Introduced ArgoCD: GitHub Actions builds ARM64 images and writes the new tag to the manifests repo, ArgoCD deploys dev and prod, and AWS Secrets Manager injects credentials, with no hardcoded secrets.
+* **Observability:** Started the monitoring initiative (Prometheus, Grafana, Alertmanager, CloudWatch alarms to Slack) to measure resource utilization and guide the cost work.
+* **Report Generation Service:** Built a queue-driven PDF service (Node, SQS, S3, React-PDF) that moved report generation out of the browser and enabled bulk B2B report distribution; validated with real users on batches of ~150 queued reports.
+* **AI Development Workflow:** Built the team's Claude Code plugin marketplace: skills that take a request from written spec to GitHub issue, stacked PRs and review, an automated PR reviewer with the team's known-bug checklist, and documentation standards; synced org-wide so non-engineers use it in the Claude app.
+* **Shared Predisposition Library:** Consolidated genetic-predisposition calculations scattered across apps into one shared TypeScript library.
+* **Full-Stack & Mobile Development:** Built the **Mynu App** (iOS/Android) with **React Native (Expo)** and the web platforms **app.mynubaby.cl** and **mi.mynu.ai** with **React**, from zero to production, with TanStack Query caching for fast, stable clients.
+* **Earlier Platform Work:** Led the Azure → AWS ECS/Fargate migration and built an event-driven notifications microservice (SQS, Lambda) in Terraform.
+* **IAM & Authentication:** Designed AWS Cognito authentication, then migrated all users to **Clerk** with zero downtime and zero data loss, with Google and Apple OAuth.
+* **Performance & Networking:** Cut third-party API (Edamam) latency by 2 s with in-memory caching and ALB sticky sessions; designed least-privilege VPC networking with peering and interface endpoints.
+* **Ownership & Code Review:** Maintain the lab sample-tracking and kit-management systems, administer the GitHub Enterprise organization (permissions, roles), and review teammates' and AI-generated code.
 
 ### Software Engineer · Zippedi Inc.
 *(Jun 2022 – Oct 2023) | Santiago, Chile*
@@ -45,10 +49,8 @@
 ### Operations Engineer (Intern) · ITD Telecom
 *(Jan 2021 – Aug 2021) | Santiago, Chile*
 
-* **Hosting Infrastructure Support & Internal Tooling:** Provided technical support for the hosting platform and developed internal tools to improve operational efficiency.
-* **Service Management & GLPI Implementation:** Worked on implementing GLPI to streamline internal IT operations and ticket tracking.
-* **Infrastructure Monitoring:** Monitored hosting infrastructure health and performance metrics using **Cacti**.
-* **SLA & Process Governance:** Contributed to developing internal SLA policies to streamline company-wide workflows.
+* **Hosting Support & Tooling:** Supported the hosting platform, built internal tools and implemented GLPI for IT ticketing.
+* **Monitoring & SLAs:** Monitored infrastructure health with **Cacti** and helped define internal SLA policies.
 
 ### Teaching & Lab Assistant · Universidad Técnica Federico Santa María
 *(Aug 2019 – Dec 2022) | Santiago, Chile*
@@ -58,11 +60,9 @@
 
 ## KEY PROJECTS
 
-* **Cloud Infrastructure Blueprint (Terraform):** Designed and implemented a production-style AWS platform using Terraform featuring isolated VPCs, VPC Peering, ECS services, SQS messaging, IAM least-privilege policies, and event-driven communication to demonstrate scalable cloud architecture patterns.
 * **Trismegistus (Go, Swift, Kotlin):** Go WebSocket relay with SQLite and event replay for a self-hosted AI agent, plus native SwiftUI (macOS) and Jetpack Compose (Android) apps on one contract-tested protocol.
 * **Self-Hosted Homelab:** 25 Docker Compose containers behind Caddy (wildcard TLS via Cloudflare DNS-01), AdGuard DNS, Tailscale-only access, Beszel/Uptime Kuma monitoring and nightly restic backups.
 * **Open Source:** [news-reader](https://github.com/xMuramasa/news-reader) (AI news briefings as validated JSON; Bun, MongoDB, React), [img-transformer](https://github.com/xMuramasa/img-transformer) (FastAPI image conversion) and [on-site-meeting-logger](https://github.com/xMuramasa/on-site-meeting-logger) (meeting recordings to minutes and PDFs).
-* **AI-Assisted Delivery:** I direct AI coding agents (Claude Code) through specs, isolated worktrees and test and review gates; the projects above were built this way.
 * **Thesis - Machine Learning for Automata Classification:** Built a high-accuracy model for 1D cellular automata, demonstrating strong analytical and algorithmic design skills.
 
 ## EDUCATION
@@ -74,8 +74,10 @@
 
 ## CERTIFICATIONS
 
-* **Docker Mastery:** Kubernetes & Swarm (Udemy) · **Go - The Complete Guide** (Udemy)
+* **[Argo CD and Argo Rollouts for GitOps: The Definitive Guide](https://www.udemy.com/certificate/UC-49965bee-53e3-4448-91a5-6d686af652a4/)** (Udemy, Nov 2026)
+* **Docker Mastery:** Kubernetes & Swarm (Udemy)
+* **Go - The Complete Guide** (Udemy)
 
 ## ABOUT ME
 
-Software and Cloud Engineer with a strong foundation in backend engineering and identity access management. Focused on designing scalable, modular, and secure distributed systems. I excel at translating complex business requirements into high-performance cloud architectures, leveraging IaC to ensure consistency and reliability from the ground up.
+Software and Cloud Engineer and Mynu's sole infrastructure engineer, where I moved the platform to Kubernetes and cut cloud costs about 70%. Strong foundation in backend engineering and identity and access management; I design scalable, secure distributed systems, define everything as code, and use AI coding agents for most implementation while owning the architecture and the review.

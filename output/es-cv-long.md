@@ -7,28 +7,32 @@
 
 ## HABILIDADES TÉCNICAS
 
-* **Arquitectura de Sistemas:** Diseño de Microservicios, Arquitectura Orientada a Eventos, Planificación de Escalabilidad, Sistemas Distribuidos.
-* **Infraestructura Cloud:** AWS (ECS, Fargate, Lambda, VPC, SQS, Secrets Manager), Azure (Arquitectura de Red, VPN), Proxmox VE.
-* **Gestión de Identidad y Accesos (IAM):** AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts, Apple Developer.
-* **Infraestructura como Código (IaC):** Terraform, CloudFormation.
-* **Backend y Automatización:** Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker, GitHub Actions CI/CD.
-* **Apps y Autoalojamiento:** React Native (Expo), SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.
-* **Bases de Datos:** PostgreSQL, AWS Aurora, AWS DynamoDB, MongoDB, SQLite, Optimización de Consultas.
-* **Observabilidad y Redes:** Wireshark, CloudWatch, Cacti, Grupos de Seguridad (Security Groups).
+* **Cloud e IaC:** AWS (EC2, ECS, Fargate, Lambda, RDS, Aurora, VPC, SQS, S3, Secrets Manager), Azure (redes, VPN), Terraform, CloudFormation, Proxmox VE.
+* **Kubernetes y GitOps:** Kubernetes (k3s), ArgoCD, Kustomize, KEDA, cert-manager, CI/CD con GitHub Actions, imágenes multi-arquitectura (ARM64).
+* **Observabilidad y Redes:** Prometheus, Grafana, Alertmanager, CloudWatch, Wireshark, Cacti, Security Groups.
+* **Arquitectura de Sistemas:** Microservicios, arquitectura orientada a eventos, procesamiento con colas, sistemas distribuidos, optimización de costos.
+* **IAM:** AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts, Apple Developer.
+* **Backend y Datos:** Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker; PostgreSQL, AWS Aurora, DynamoDB, MongoDB, SQLite.
+* **Apps y Autoalojamiento:** React Native (Expo), React, SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.
+* **Desarrollo Asistido por IA:** Claude Code para la mayor parte de la implementación; la arquitectura y la revisión son mías.
 
 ## EXPERIENCIA PROFESIONAL
 
-### Full Stack Software Engineer · Mynu.ai
+### Software Engineer (Cloud & Platform) · Mynu.ai
 *(Mar 2024 – Presente) | Santiago, Chile*
 
-* **Full-Stack & Mobile Development:** Diseñé e implementé la arquitectura mobile-first y web app desde cero hasta producción para **Mynu App** (iOS/Android) utilizando **React Native (Expo)** y plataformas web como **app.mynubaby.cl** y **mi.mynu.ai** con **React**, asegurando una integración fluida con los microservicios backend.
-* **Client-Side Optimization & State Management:** Optimicé el rendimiento client-side e implementé estrategias eficientes de manejo de estado y caching con **TanStack Query**, reduciendo la latencia percibida por el usuario y garantizando estabilidad en entornos de producción mobile y web.
-* **Cloud Infrastructure & Migration:** Lideré la migración cloud desde Azure hacia **AWS ECS/Fargate**, reestructurando el despliegue de contenedores para mejorar el throughput, la escalabilidad y la eficiencia de costos.
-* **Infrastructure as Code (IaC):** Diseñé e implementé un microservicio de notificaciones event-driven utilizando **Terraform** (SQS & Lambda), desacoplando tareas asíncronas y eliminando cuellos de botella en el procesamiento del backend.
-* **IAM & Authentication Architecture:** Diseñé un sistema de autenticación personalizado utilizando **AWS Cognito** en una arquitectura híbrida; posteriormente ejecuté una migración de usuarios a **Clerk** con cero downtime y cero pérdida de datos, integrando flujos personalizados de OAuth con Google y Apple.
-* **CI/CD & Security Automation:** Construí pipelines de despliegue automatizados utilizando **GitHub Actions**, Environments y **AWS Secrets Manager** para la inyección dinámica de credenciales, eliminando el uso de credenciales hardcodeadas.
-* **Performance Engineering:** Reduje la latencia de respuesta en 2 segundos en integraciones con APIs de terceros (Edamam API) mediante la implementación de mecanismos de in-memory caching y ALB Sticky Sessions.
-* **Network & Security Design:** Configuré topologías de VPC seguras con VPC Peering e Interface Endpoints para garantizar una comunicación privada bajo el principio de menor privilegio entre servicios distribuidos.
+* **Kubernetes Migration & Cost Reduction:** Como único ingeniero de infraestructura, planifiqué, ejecuté y lideré de principio a fin la migración de todos los servicios de AWS ECS/Fargate a Kubernetes (k3s) autogestionado en AWS, con toda la infraestructura en Terraform; reduje el gasto cloud mensual en ~70%.
+* **Database Consolidation:** Consolidé tres instancias Aurora en una sola instancia RDS y ejecuté las migraciones de datos.
+* **GitOps CI/CD:** Implementé ArgoCD: GitHub Actions construye imágenes ARM64 y actualiza el tag en el repo de manifiestos, ArgoCD despliega dev y prod y Secrets Manager inyecta las credenciales.
+* **Observability:** Inicié la iniciativa de monitoreo (Prometheus, Grafana, Alertmanager, alarmas de CloudWatch hacia Slack) para medir el uso de recursos y guiar la optimización de costos.
+* **Report Generation Service:** Construí un servicio de PDFs con colas (Node, SQS, S3, React-PDF) que sacó los reportes del navegador y permitió la distribución masiva B2B; probado con usuarios reales en lotes de ~150.
+* **AI Development Workflow:** Construí el marketplace de plugins de Claude Code del equipo: skills que llevan una solicitud de la especificación al issue, PRs apilados y revisión, un revisor automático de PRs con los errores conocidos del equipo y estándares de documentación; sincronizado a toda la organización, también para personas no técnicas.
+* **Shared Predisposition Library:** Consolidé en una librería TypeScript compartida los cálculos de predisposición genética que estaban dispersos entre aplicaciones.
+* **Full-Stack & Mobile Development:** Construí **Mynu App** (iOS/Android) con **React Native (Expo)** y las plataformas web **app.mynubaby.cl** y **mi.mynu.ai** con **React**, de cero a producción, con caching de TanStack Query.
+* **Earlier Platform Work:** Lideré la migración de Azure a AWS ECS/Fargate y construí un microservicio de notificaciones event-driven (SQS, Lambda) con Terraform.
+* **IAM & Authentication:** Diseñé la autenticación con AWS Cognito y luego migré a todos los usuarios a **Clerk** sin downtime ni pérdida de datos, con OAuth de Google y Apple.
+* **Performance & Networking:** Reduje en 2 s la latencia de una API de terceros (Edamam) con caching en memoria y ALB Sticky Sessions; diseñé redes VPC de mínimo privilegio con peering e interface endpoints.
+* **Ownership & Code Review:** Mantengo los sistemas de seguimiento de muestras de laboratorio y de gestión de kits, administro la organización de GitHub Enterprise (permisos y roles) y reviso código de mis compañeros y generado por IA.
 
 ### Software Engineer · Zippedi Inc.
 *(Jun 2022 – Oct 2023) | Santiago, Chile*
@@ -45,10 +49,8 @@
 ### Operations Engineer (Intern) · ITD Telecom
 *(Ene 2021 – Ago 2021) | Santiago, Chile*
 
-* **Hosting Infrastructure Support & Internal Tooling:** Proporcioné soporte técnico a la plataforma de hosting y desarrollé herramientas internas para mejorar la eficiencia operacional.
-* **Service Management & GLPI Implementation:** Trabajé en la implementación de GLPI para optimizar las operaciones de TI internas y el seguimiento de tickets.
-* **Infrastructure Monitoring:** Monitoreé la salud y las métricas de rendimiento de la infraestructura de hosting utilizando **Cacti**.
-* **SLA & Process Governance:** Contribuí en el desarrollo de políticas internas de SLA para optimizar los flujos de trabajo generales de la empresa.
+* **Hosting Support & Tooling:** Soporte a la plataforma de hosting, desarrollo de herramientas internas e implementación de GLPI para tickets de TI.
+* **Monitoring & SLAs:** Monitoreé la infraestructura con **Cacti** y aporté a las políticas internas de SLA.
 
 ### Ayudante Docente y de Laboratorio · Universidad Técnica Federico Santa María
 *(Ago 2019 – Dic 2022) | Santiago, Chile*
@@ -58,11 +60,9 @@
 
 ## PROYECTOS DESTACADOS
 
-* **Cloud Infrastructure Blueprint (Terraform):** Diseñé e implementé una plataforma AWS de nivel de producción utilizando Terraform, la cual incluye VPCs aisladas, VPC Peering, servicios ECS, mensajería SQS, políticas de mínimo privilegio de IAM y comunicación orientada a eventos para demostrar patrones de arquitectura cloud escalable.
 * **Trismegistus (Go, Swift, Kotlin):** Relay WebSocket en Go con SQLite y reenvío de eventos para un agente de IA autoalojado, y apps nativas SwiftUI (macOS) y Jetpack Compose (Android) sobre un protocolo común con contract tests.
 * **Homelab Autoalojado:** 25 contenedores Docker Compose tras Caddy (TLS wildcard vía Cloudflare DNS-01), DNS con AdGuard, acceso solo por Tailscale, monitoreo con Beszel/Uptime Kuma y respaldos nocturnos con restic.
 * **Open Source:** [news-reader](https://github.com/xMuramasa/news-reader) (noticias generadas con IA como JSON validado; Bun, MongoDB, React), [img-transformer](https://github.com/xMuramasa/img-transformer) (conversión de imágenes con FastAPI) y [on-site-meeting-logger](https://github.com/xMuramasa/on-site-meeting-logger) (de grabaciones de reuniones a actas y PDFs).
-* **Desarrollo con IA:** Construí estos proyectos dirigiendo agentes de IA (Claude Code) con specs y revisión estricta.
 * **Tesis - Machine Learning para Clasificación de Autómatas:** Construí un modelo de alta precisión para autómatas celulares 1D, demostrando sólidas habilidades de diseño analítico y algorítmico.
 
 ## EDUCACIÓN
@@ -74,8 +74,10 @@
 
 ## CERTIFICACIONES
 
-* **Docker Mastery:** Kubernetes & Swarm (Udemy) · **Go - The Complete Guide** (Udemy)
+* **[Argo CD and Argo Rollouts for GitOps: The Definitive Guide](https://www.udemy.com/certificate/UC-49965bee-53e3-4448-91a5-6d686af652a4/)** (Udemy, nov. 2026)
+* **Docker Mastery:** Kubernetes & Swarm (Udemy)
+* **Go - The Complete Guide** (Udemy)
 
 ## SOBRE MÍ
 
-Software and Cloud Engineer con una sólida base en ingeniería backend y gestión de identidades y accesos. Enfocado en el diseño de sistemas distribuidos escalables, modulares y seguros. Sobresalgo en la traducción de requisitos de negocio complejos hacia arquitecturas cloud de alto rendimiento, aprovechando la infraestructura como código (IaC) para garantizar consistencia y confiabilidad desde sus cimientos.
+Software and Cloud Engineer y único ingeniero de infraestructura de Mynu, donde migré la plataforma a Kubernetes y reduje los costos cloud cerca de un 70%. Sólida base en ingeniería backend y gestión de identidades y accesos; diseño sistemas distribuidos escalables y seguros, defino todo como código y uso agentes de IA para la mayor parte de la implementación, manteniendo la arquitectura y la revisión.
