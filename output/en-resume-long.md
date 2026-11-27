@@ -7,7 +7,7 @@
 
 ## SUMMARY
 
-I get things done, end to end: 4+ years building software from cloud infrastructure to mobile apps, now with an agentic workflow. As Mynu's sole infrastructure engineer I cut cloud costs ~70%. I'm growing toward software architecture.
+Software and cloud engineer with 4+ years shipping end to end, from cloud infrastructure to mobile apps. As Mynu's sole infrastructure engineer I cut cloud costs ~70%. I work with an agentic workflow and I'm growing toward software architecture.
 
 ## TECHNICAL SKILLS
 
@@ -18,43 +18,40 @@ I get things done, end to end: 4+ years building software from cloud infrastruct
 * **Identity & Access (IAM):** AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts, Apple Developer.
 * **Backend & Data:** Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker; PostgreSQL, AWS Aurora, DynamoDB, MongoDB, SQLite.
 * **Apps & Self-Hosting:** React Native (Expo), React, SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.
-* **AI-Assisted Development:** Claude Code for most implementation; architecture, review and hand edits are mine.
+* **Agentic Development:** Architecture, review and hand edits are mine; Claude Code agents handle most implementation.
 
 ## PROFESSIONAL EXPERIENCE
 
 ### Software Engineer (Cloud & Platform) · Mynu.ai
 *(Mar 2024 – Present) | Santiago, Chile*
 
-* **Kubernetes Migration & Cost Reduction:** As the sole infrastructure engineer, planned, executed and led end to end the move of every service from AWS ECS/Fargate to a self-managed Kubernetes (k3s) cluster on AWS, with all infrastructure in Terraform modules; cut monthly cloud spend by ~70%.
-* **Database Consolidation:** Consolidated three Aurora instances into a single RDS instance and ran the data migrations.
-* **GitOps CI/CD:** Introduced ArgoCD: GitHub Actions builds ARM64 images and writes the new tag to the manifests repo, ArgoCD deploys dev and prod, and AWS Secrets Manager injects credentials, with no hardcoded secrets.
-* **Observability:** Started the monitoring initiative (Prometheus, Grafana, Alertmanager, CloudWatch alarms to Slack) to measure resource utilization and guide the cost work.
+* **Kubernetes Migration & Cost Reduction:** As the sole infrastructure engineer, planned and led the move of every service from AWS ECS/Fargate to self-managed Kubernetes (k3s) on AWS, with all infrastructure in Terraform; cut monthly cloud spend by ~70%. Also consolidated three Aurora instances into one RDS instance and ran the data migrations.
+* **GitOps CI/CD:** Introduced ArgoCD GitOps, where GitHub Actions builds ARM64 images and writes the new tag to the manifests repo, ArgoCD deploys dev and prod, and AWS Secrets Manager injects credentials, with no hardcoded secrets.
+* **Observability:** Set up monitoring (Prometheus, Grafana, Alertmanager, CloudWatch alarms to Slack) to measure resource utilization, which guided the cost-reduction work.
 * **Report Generation Service:** Built a queue-driven PDF service (Node, SQS, S3, React-PDF) that moved report generation out of the browser and enabled bulk B2B report distribution; validated with real users on batches of ~150 queued reports.
-* **AI Development Workflow:** Built the team's Claude Code plugin marketplace: skills that take a request from written spec to GitHub issue, stacked PRs and review, an automated PR reviewer with the team's known-bug checklist, and documentation standards; synced org-wide so non-engineers use it in the Claude app.
+* **AI Development Workflow:** Built the team's Claude Code plugin marketplace: skills that take a request from written spec to GitHub issue, stacked PRs and review, an automated PR reviewer with the team's known-bug checklist, and documentation standards; synced org-wide so non-engineers can use it in the Claude app.
 * **Shared Predisposition Library:** Consolidated genetic-predisposition calculations scattered across apps into one shared TypeScript library.
-* **Full-Stack & Mobile Development:** Built the **Mynu App** (iOS/Android) with **React Native (Expo)** and the web platforms **app.mynubaby.cl** and **mi.mynu.ai** with **React**, from zero to production, with TanStack Query caching for fast, stable clients.
-* **Earlier Platform Work:** Led the Azure → AWS ECS/Fargate migration and built an event-driven notifications microservice (SQS, Lambda) in Terraform.
-* **IAM & Authentication:** Designed AWS Cognito authentication, then migrated all users to **Clerk** with zero downtime and zero data loss, with Google and Apple OAuth.
-* **Performance & Networking:** Cut third-party API (Edamam) latency by 2 s with in-memory caching and ALB sticky sessions; designed least-privilege VPC networking with peering and interface endpoints.
+* **Full-Stack & Mobile Development:** Built the Mynu App (iOS/Android) with React Native (Expo) and the web platforms app.mynubaby.cl and mi.mynu.ai with React and TanStack Query, from zero to production.
 * **Ownership & Code Review:** Maintain the lab sample-tracking and kit-management systems, administer the GitHub Enterprise organization (permissions, roles), and review teammates' and AI-generated code.
+* **Platform, IAM & Networking:** Led the earlier Azure → AWS ECS/Fargate migration and built an event-driven notifications microservice (SQS, Lambda) in Terraform; designed least-privilege VPC networking (peering, interface endpoints) and AWS Cognito authentication, then moved all users to Clerk with zero downtime or data loss (Google and Apple OAuth).
 
 ### Software Engineer · Zippedi Inc.
 *(Jun 2022 – Oct 2023) | Santiago, Chile*
 
-* **Full-Stack & Mobile Engineering:** Developed key features and delivered continuous improvements for customer-facing mobile applications and web platforms, working across both long-term development cycles (Shape-Up) and agile sprints for rapid feature delivery and bug fixes.
-* **Internal QA Tooling & Platforms:** Implemented features and maintained tooling on the web platform for the QA team, streamlining internal software validation cycles.
+* **Customer Mobile App:** Shipped new features for the customer-facing mobile app, in Shape-Up cycles and agile sprints.
+* **Internal Tooling:** Revamped the internal task-management platform and added features and upgrades to the QA platform.
 
 ### Junior Cybersecurity Engineer (Intern) · NTT DATA Europe & LATAM
 *(Jan 2022 – Feb 2022) | Santiago, Chile*
 
-* **Cloud Security & Policy:** Assessed Azure network topologies for corporate clients, identifying vulnerabilities and implementing cloud-native hardening frameworks.
-* **Threat Modeling & Governance Research:** Researched and documented Cyber Kill Chain methodologies to strengthen vulnerability analysis and threat modeling; conducted security research aligned with the ISO 27001 standard to support compliance and risk management strategies.
+* **Cloud Security:** Assessed Azure network topologies for corporate clients and helped draft their security documentation.
+* **Threat Response Guides:** Wrote action guides against Cyber Kill Chain stages and researched ISO 27001 controls.
 
 ### Operations Engineer (Intern) · ITD Telecom
 *(Jan 2021 – Aug 2021) | Santiago, Chile*
 
 * **Hosting Support & Tooling:** Supported the hosting platform, built internal tools and implemented GLPI for IT ticketing.
-* **Monitoring & SLAs:** Monitored infrastructure health with **Cacti** and helped define internal SLA policies.
+* **Monitoring & SLAs:** Monitored infrastructure health with Cacti and helped define internal SLA policies.
 
 ### Teaching & Lab Assistant · Universidad Técnica Federico Santa María
 *(Aug 2019 – Dec 2022) | Santiago, Chile*
@@ -68,20 +65,20 @@ I get things done, end to end: 4+ years building software from cloud infrastruct
 * **[Caduceus](https://github.com/xMuramasa/caduceus) (Go):** Engine of my agentic workflow: turns a ready GitHub issue into a headless Claude Code run in its own worktree, and a merge queue lands reviewed PRs once their gates pass.
 * **Self-Hosted Homelab:** 25 Docker Compose containers behind Caddy (wildcard TLS via Cloudflare DNS-01), AdGuard DNS, Tailscale-only access, Beszel/Uptime Kuma monitoring and nightly restic backups.
 * **Open Source:** [news-reader](https://github.com/xMuramasa/news-reader) (AI news briefings as validated JSON; Bun, MongoDB, React), [img-transformer](https://github.com/xMuramasa/img-transformer) (FastAPI image conversion) and [on-site-meeting-logger](https://github.com/xMuramasa/on-site-meeting-logger) (meeting recordings to minutes and PDFs).
-* **Thesis – ML for Automata Classification:** High-accuracy model for 1D cellular automata.
 
 ## EDUCATION
 
 ### Universidad Técnica Federico Santa María
 *(2017 – 2023) | Santiago, Chile*
 
-* Bachelor of Science (B.Sc.) in Computer Science Engineering (5-year Professional Degree)
+* Ingeniero Civil Informático (professional title in Computer Engineering) · B.Sc. in Engineering Sciences
+* Thesis: machine-learning classifier for 1D cellular automata (98.5% accuracy).
 
 ## CERTIFICATIONS
 
 * **[Argo CD and Argo Rollouts for GitOps: The Definitive Guide](https://www.udemy.com/certificate/UC-49965bee-53e3-4448-91a5-6d686af652a4/)** (Udemy, Nov 2026)
-* **Docker Mastery:** Kubernetes & Swarm (Udemy)
-* **Go - The Complete Guide** (Udemy)
+* **Docker Mastery: Kubernetes & Swarm** (Udemy, Nov 2024)
+* **Go - The Complete Guide** (Udemy, Jan 2024)
 
 ## INTERESTS
 
