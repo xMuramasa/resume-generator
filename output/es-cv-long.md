@@ -1,6 +1,6 @@
 # MARTÍN SALINAS SCUSSOLIN
 
-**Software & Cloud Engineer** — Santiago, Chile · Abierto a trabajo remoto · Inglés nivel profesional
+**Software & Cloud Engineer** — Santiago, Chile · Abierto a trabajo remoto · Inglés: nivel profesional
 [martin.salinas.scussolin@gmail.com](mailto:martin.salinas.scussolin@gmail.com) · [x-muramasa.dev](https://x-muramasa.dev) · [LinkedIn](https://www.linkedin.com/in/xmuramasa) · [GitHub](https://github.com/xMuramasa)
 
 ---
@@ -26,10 +26,10 @@ Ingeniero de software y cloud con más de 4 años llevando proyectos de principi
 *(Mar 2024 – Actualidad) | Santiago, Chile*
 
 * **Migración a Kubernetes y reducción de costos:** Como único ingeniero de infraestructura, planifiqué y lideré la migración de todos los servicios de AWS ECS/Fargate a Kubernetes (k3s) autogestionado en AWS, con toda la infraestructura en Terraform; reduje el gasto cloud mensual en ~70 %. También consolidé tres instancias Aurora en una sola instancia RDS y ejecuté las migraciones de datos.
-* **CI/CD con GitOps:** Implementé GitOps con ArgoCD; GitHub Actions construye imágenes ARM64 y actualiza el tag en el repo de manifiestos, ArgoCD despliega dev y prod y Secrets Manager inyecta las credenciales.
-* **Observabilidad:** Puse en marcha el monitoreo (Prometheus, Grafana, Alertmanager, alarmas de CloudWatch hacia Slack) para medir el uso de recursos, lo que guió la reducción de costos.
-* **Servicio de generación de reportes:** Construí un servicio de PDFs con colas (Node, SQS, S3, React-PDF) que sacó los reportes del navegador y permitió la distribución masiva B2B; probado con usuarios reales en lotes de ~150.
-* **Flujo de desarrollo con IA:** Creé el marketplace de plugins de Claude Code del equipo: skills que llevan una solicitud de la especificación al issue, PRs apilados y revisión, un revisor automático de PRs con los errores conocidos del equipo y estándares de documentación; sincronizado a toda la organización, también para personas no técnicas.
+* **CI/CD con GitOps:** Implementé GitOps con ArgoCD; GitHub Actions construye imágenes ARM64 y actualiza el tag en el repo de manifiestos, ArgoCD despliega dev y prod, y Secrets Manager inyecta las credenciales.
+* **Observabilidad:** Puse en marcha el monitoreo (Prometheus, Grafana, Alertmanager, alarmas de CloudWatch hacia Slack) para medir el uso de recursos, lo que guio la reducción de costos.
+* **Servicio de generación de reportes:** Construí un servicio de PDFs con colas (Node, SQS, S3, React-PDF) que sacó los reportes del navegador y permitió la distribución masiva B2B; probado con usuarios reales en lotes de ~150 reportes.
+* **Flujo de desarrollo con IA:** Creé el marketplace de plugins de Claude Code del equipo: skills que llevan una solicitud de la especificación al issue, PRs apilados y revisión, un revisor automático de PRs con los errores conocidos del equipo y estándares de documentación; disponible para toda la organización, incluidas personas no técnicas.
 * **Librería compartida de predisposición genética:** Reuní en una sola librería TypeScript los cálculos que estaban dispersos entre aplicaciones.
 * **Desarrollo full-stack y móvil:** Construí Mynu App (iOS/Android) con React Native (Expo) y las plataformas web app.mynubaby.cl y mi.mynu.ai con React y TanStack Query, de cero a producción.
 * **Mantención y revisión de código:** Mantengo los sistemas de seguimiento de muestras de laboratorio y de gestión de kits, administro la organización de GitHub Enterprise (permisos y roles) y reviso el código del equipo y el generado por IA.
@@ -39,7 +39,7 @@ Ingeniero de software y cloud con más de 4 años llevando proyectos de principi
 *(Jun 2022 – Oct 2023) | Santiago, Chile*
 
 * **App móvil para clientes:** Desarrollé funcionalidades para la app de clientes, en ciclos Shape-Up y sprints ágiles.
-* **Herramientas internas:** Renové la plataforma interna de gestión de tareas y agregué funcionalidades y mejoras a la plataforma interna de QA.
+* **Herramientas internas:** Renové la plataforma interna de gestión de tareas y agregué funcionalidades y mejoras a la plataforma de QA.
 
 ### Junior Cybersecurity Engineer (Intern) · NTT DATA Europe & LATAM
 *(Ene 2022 – Feb 2022) | Santiago, Chile*
@@ -61,10 +61,10 @@ Ingeniero de software y cloud con más de 4 años llevando proyectos de principi
 
 ## PROYECTOS DESTACADOS
 
-* **Trismegistus** ([hermes-relay](https://github.com/xMuramasa/hermes-relay), [trismegistus-mac](https://github.com/xMuramasa/trismegistus-mac), [trismegistus-android](https://github.com/xMuramasa/trismegistus-android)): relay WebSocket en Go con SQLite y reenvío de eventos para un agente de IA autoalojado, más apps SwiftUI y Jetpack Compose sobre un protocolo con contract tests.
+* **Trismegistus** ([hermes-relay](https://github.com/xMuramasa/hermes-relay), [trismegistus-mac](https://github.com/xMuramasa/trismegistus-mac), [trismegistus-android](https://github.com/xMuramasa/trismegistus-android)): relay WebSocket en Go con SQLite y reproducción de eventos para un agente de IA autoalojado, más apps SwiftUI y Jetpack Compose sobre un protocolo con contract tests.
 * **[Caduceus](https://github.com/xMuramasa/caduceus) (Go):** Motor de mi flujo con agentes de IA: convierte un issue listo de GitHub en una ejecución headless de Claude Code en su propio worktree, y una cola de merge integra los PRs revisados cuando pasan sus checks.
 * **Homelab autoalojado:** 25 contenedores Docker Compose tras Caddy (TLS wildcard vía Cloudflare DNS-01), DNS con AdGuard, acceso solo por Tailscale, monitoreo con Beszel/Uptime Kuma y respaldos nocturnos con restic.
-* **Código abierto:** [news-reader](https://github.com/xMuramasa/news-reader) (noticias generadas con IA como JSON validado; Bun, MongoDB, React), [img-transformer](https://github.com/xMuramasa/img-transformer) (conversión de imágenes con FastAPI) y [on-site-meeting-logger](https://github.com/xMuramasa/on-site-meeting-logger) (de grabaciones de reuniones a actas y PDFs).
+* **Código abierto:** [news-reader](https://github.com/xMuramasa/news-reader) (resúmenes de noticias generados con IA como JSON validado; Bun, MongoDB, React), [img-transformer](https://github.com/xMuramasa/img-transformer) (conversión de imágenes con FastAPI) y [on-site-meeting-logger](https://github.com/xMuramasa/on-site-meeting-logger) (de grabaciones de reuniones a actas y PDFs).
 
 ## EDUCACIÓN
 

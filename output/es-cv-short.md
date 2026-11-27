@@ -1,18 +1,18 @@
 # MARTÍN SALINAS SCUSSOLIN
 
-**Software & Cloud Engineer** — Santiago, Chile · Abierto a trabajo remoto · Inglés nivel profesional
+**Software & Cloud Engineer** — Santiago, Chile · Abierto a trabajo remoto · Inglés: nivel profesional
 [martin.salinas.scussolin@gmail.com](mailto:martin.salinas.scussolin@gmail.com) · [x-muramasa.dev](https://x-muramasa.dev) · [LinkedIn](https://www.linkedin.com/in/xmuramasa) · [GitHub](https://github.com/xMuramasa)
 
 ---
 
 ## PERFIL
 
-Ingeniero de software y cloud que lleva proyectos de principio a fin; en Mynu reduje ~70 % los costos cloud.
+Ingeniero de software y cloud: llevo proyectos de principio a fin y en Mynu reduje ~70 % los costos cloud.
 
 ## HABILIDADES TÉCNICAS
 
 * **Cloud y plataforma:** AWS (EC2, ECS, Lambda, RDS, SQS, S3), Kubernetes (k3s), ArgoCD, Terraform, Grafana.
-* **Arquitectura e IAM:** Microservicios, diseño event-driven, sistemas distribuidos; Cognito, Clerk, OAuth, JWT.
+* **Arquitectura e IAM:** Microservicios, diseño orientado a eventos, sistemas distribuidos; Cognito, Clerk, OAuth, JWT.
 * **Backend y datos:** Go, Python, TypeScript/Node.js, Docker, GitHub Actions, PostgreSQL, MongoDB.
 * **Desarrollo con IA:** La arquitectura y la revisión son mías; Claude Code hace la mayor parte de la implementación.
 
@@ -23,7 +23,7 @@ Ingeniero de software y cloud que lleva proyectos de principio a fin; en Mynu re
 
 * Único ingeniero de infraestructura: planifiqué y lideré la migración de ECS/Fargate a Kubernetes (k3s) con Terraform y ArgoCD, reduciendo en ~70 % los costos cloud mensuales; consolidé tres instancias Aurora en una sola instancia RDS.
 * Construí un servicio de reportes PDF basado en colas para distribución masiva B2B (~150 reportes en cola probados con usuarios reales) y una librería compartida para los cálculos de predisposición genética.
-* Creé las skills de Claude Code del equipo (especificación → issue → PRs apilados → revisión automática), sincronizadas a toda la organización; administro GitHub Enterprise y reviso el código del equipo y el generado por IA.
+* Creé las skills de Claude Code del equipo (especificación → issue → PRs apilados → revisión automática), disponibles para toda la organización; administro GitHub Enterprise y reviso el código del equipo y el generado por IA.
 * Lancé Mynu App (iOS/Android) y plataformas web de cero a producción con React Native (Expo) y React; antes lideré la migración de Azure a AWS ECS/Fargate.
 * Migré la autenticación de Cognito a Clerk sin interrupciones ni pérdida de datos.
 
