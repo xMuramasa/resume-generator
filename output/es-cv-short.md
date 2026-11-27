@@ -1,9 +1,13 @@
 # MARTÍN SALINAS SCUSSOLIN
 
-**Software & Cloud Engineer** — Santiago, Chile
+**Software & Cloud Engineer** — Santiago, Chile · Abierto a trabajo remoto · Inglés nivel profesional
 [martin.salinas.scussolin@gmail.com](mailto:martin.salinas.scussolin@gmail.com) · [x-muramasa.dev](https://x-muramasa.dev) · [LinkedIn](https://www.linkedin.com/in/xmuramasa) · [GitHub](https://github.com/xMuramasa)
 
 ---
+
+## PERFIL
+
+Saco proyectos adelante de principio a fin, de la nube a las apps, con agentes de IA; en Mynu reduje ~70% los costos cloud.
 
 ## HABILIDADES TÉCNICAS
 
@@ -55,7 +59,3 @@
 
 * **[Argo CD and Argo Rollouts for GitOps: The Definitive Guide](https://www.udemy.com/certificate/UC-49965bee-53e3-4448-91a5-6d686af652a4/)** (Udemy, nov. 2026)
 * **Docker Mastery:** Kubernetes & Swarm (Udemy) · **Go - The Complete Guide** (Udemy)
-
-## SOBRE MÍ
-
-Único ingeniero de infraestructura en Mynu: reduje ~70% los costos cloud con Kubernetes, Terraform y GitOps.

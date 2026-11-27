@@ -1,17 +1,21 @@
 # MARTÍN SALINAS SCUSSOLIN
 
-**Software & Cloud Engineer** — Santiago, Chile
+**Software & Cloud Engineer** — Santiago, Chile · Open to remote · Professional English
 [martin.salinas.scussolin@gmail.com](mailto:martin.salinas.scussolin@gmail.com) · [x-muramasa.dev](https://x-muramasa.dev) · [LinkedIn](https://www.linkedin.com/in/xmuramasa) · [GitHub](https://github.com/xMuramasa)
 
 ---
+
+## SUMMARY
+
+I get things done, end to end: 4+ years building software from cloud infrastructure to mobile apps, now with an agentic workflow. As Mynu's sole infrastructure engineer I cut cloud costs ~70%. I'm growing toward software architecture.
 
 ## TECHNICAL SKILLS
 
 * **Cloud & IaC:** AWS (EC2, ECS, Fargate, Lambda, RDS, Aurora, VPC, SQS, S3, Secrets Manager), Azure (networking, VPN), Terraform, CloudFormation, Proxmox VE.
 * **Kubernetes & GitOps:** Kubernetes (k3s), ArgoCD, Kustomize, KEDA, cert-manager, GitHub Actions CI/CD, multi-arch (ARM64) images.
 * **Observability & Networking:** Prometheus, Grafana, Alertmanager, CloudWatch, Wireshark, Cacti, Security Groups.
-* **Systems Architecture:** Microservices, event-driven architecture, queue-based processing, distributed systems, cost optimization.
-* **Identity & Access Management (IAM):** AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts, Apple Developer.
+* **Systems Architecture:** Microservices, event-driven and queue-based processing, distributed systems, cost optimization.
+* **Identity & Access (IAM):** AWS Cognito, Clerk, OAuth, JWT, Google Cloud Service Accounts, Apple Developer.
 * **Backend & Data:** Go, Python, TypeScript/Node.js, Bun, FastAPI, Docker; PostgreSQL, AWS Aurora, DynamoDB, MongoDB, SQLite.
 * **Apps & Self-Hosting:** React Native (Expo), React, SwiftUI, Jetpack Compose, Docker Compose, Caddy, Tailscale.
 * **AI-Assisted Development:** Claude Code for most implementation; architecture, review and hand edits are mine.
@@ -78,6 +82,6 @@
 * **Docker Mastery:** Kubernetes & Swarm (Udemy)
 * **Go - The Complete Guide** (Udemy)
 
-## ABOUT ME
+## INTERESTS
 
-Software and Cloud Engineer and Mynu's sole infrastructure engineer, where I moved the platform to Kubernetes and cut cloud costs about 70%. Strong foundation in backend engineering and identity and access management; I design scalable, secure distributed systems, define everything as code, and use AI coding agents for most implementation while owning the architecture and the review.
+Personal projects · Homelab · New tech · TV shows · Gaming

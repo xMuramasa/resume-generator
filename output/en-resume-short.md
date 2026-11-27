@@ -1,9 +1,13 @@
 # MARTÍN SALINAS SCUSSOLIN
 
-**Software & Cloud Engineer** — Santiago, Chile
+**Software & Cloud Engineer** — Santiago, Chile · Open to remote · Professional English
 [martin.salinas.scussolin@gmail.com](mailto:martin.salinas.scussolin@gmail.com) · [x-muramasa.dev](https://x-muramasa.dev) · [LinkedIn](https://www.linkedin.com/in/xmuramasa) · [GitHub](https://github.com/xMuramasa)
 
 ---
+
+## SUMMARY
+
+I get things done end to end, from cloud to mobile, with an agentic workflow; at Mynu I cut cloud costs ~70%.
 
 ## TECHNICAL SKILLS
 
@@ -55,7 +59,3 @@
 
 * **[Argo CD and Argo Rollouts for GitOps: The Definitive Guide](https://www.udemy.com/certificate/UC-49965bee-53e3-4448-91a5-6d686af652a4/)** (Udemy, Nov 2026)
 * **Docker Mastery:** Kubernetes & Swarm (Udemy) · **Go - The Complete Guide** (Udemy)
-
-## ABOUT ME
-
-Sole infrastructure engineer who cut a production platform's cloud costs ~70% with Kubernetes, Terraform and GitOps.
