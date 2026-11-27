@@ -44,9 +44,9 @@ Saco proyectos adelante de principio a fin, de la nube a las apps, con agentes d
 
 ## PROYECTOS DESTACADOS
 
-* **Trismegistus:** Relay WebSocket en Go y apps nativas SwiftUI/Jetpack Compose para un agente de IA autoalojado.
+* **[Trismegistus](https://github.com/xMuramasa/hermes-relay):** Relay WebSocket en Go y apps nativas SwiftUI/Jetpack Compose para un agente de IA autoalojado.
+* **[Caduceus](https://github.com/xMuramasa/caduceus):** Motor en Go de mi flujo con agentes: issue → ejecución headless de Claude Code → cola de merge.
 * **Homelab Autoalojado:** 25 contenedores Docker Compose tras Caddy (TLS wildcard), Tailscale y respaldos restic.
-* **Tesis – ML para Clasificación de Autómatas:** Modelo de alta precisión para autómatas celulares 1D.
 
 ## EDUCACIÓN
 

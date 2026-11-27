@@ -44,9 +44,9 @@ I get things done end to end, from cloud to mobile, with an agentic workflow; at
 
 ## KEY PROJECTS
 
-* **Trismegistus:** Go WebSocket relay and native SwiftUI/Jetpack Compose apps for a self-hosted AI agent.
+* **[Trismegistus](https://github.com/xMuramasa/hermes-relay):** Go WebSocket relay and native SwiftUI/Jetpack Compose apps for a self-hosted AI agent.
+* **[Caduceus](https://github.com/xMuramasa/caduceus):** Go engine of my agentic workflow: issue → headless Claude Code run → gated merge queue.
 * **Self-Hosted Homelab:** 25 Docker Compose containers behind Caddy (wildcard TLS), Tailscale, restic backups.
-* **Thesis – ML for Automata Classification:** High-accuracy model for 1D cellular automata.
 
 ## EDUCATION
 
