@@ -7,7 +7,7 @@
 
 ## SUMMARY
 
-Software and cloud engineer: I ship end to end, from cloud to mobile, and at Mynu I cut cloud costs by ~70%.
+Software and cloud engineer who owns systems end to end, from infrastructure to the apps people use.
 
 ## TECHNICAL SKILLS
 

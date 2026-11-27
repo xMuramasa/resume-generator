@@ -7,7 +7,7 @@
 
 ## PERFIL
 
-Ingeniero de software y cloud: llevo proyectos de principio a fin y en Mynu reduje ~70 % los costos cloud.
+Ingeniero de software y cloud que se hace cargo de los sistemas de principio a fin, de la infraestructura a las apps.
 
 ## HABILIDADES TÉCNICAS
 

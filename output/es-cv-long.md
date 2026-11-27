@@ -7,7 +7,7 @@
 
 ## PERFIL
 
-Ingeniero de software y cloud con más de 4 años llevando proyectos de principio a fin, desde la infraestructura cloud hasta las apps móviles. Como único ingeniero de infraestructura de Mynu, reduje cerca de un 70 % los costos cloud. Trabajo con un flujo basado en agentes de IA y quiero crecer hacia la arquitectura de software.
+Ingeniero de software y cloud que se hace cargo de los sistemas de principio a fin, desde la infraestructura hasta las apps que usan las personas. Trabajo con un flujo basado en agentes de IA, con la arquitectura y la revisión en mis manos, y quiero crecer hacia la arquitectura de software.
 
 ## HABILIDADES TÉCNICAS
 
